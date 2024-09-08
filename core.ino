@@ -27,15 +27,14 @@ void loop() {
 
   //INPUT Zone...
 
-  //CH1-4 (Joy)
-  for (byte i = 0; i < 5; i++) {
-    int value = readChannel(i, -100, 100, 0);
-    Serial.print("Ch");
-    Serial.print(i + 1);
-    Serial.print(": ");
-    Serial.print(value);
-    Serial.print(" | ");
-  }
+  //CH1-5 (Joy)
+  int CH1value = readChannel(0, -100, 100, 0);
+  int CH2value = readChannel(1, -100, 100, 0);
+  int CH3value = readChannel(2, -100, 100, 0);
+  int CH4value = readChannel(3, -100, 100, 0);
+  int CH5value = readChannel(4, -100, 100, 0);
+  Serial.print(CH1value);
+
   //CH6 (Switch)
   Serial.print("Ch6: ");
   Serial.print(readSwitch(5, false));
