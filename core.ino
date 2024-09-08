@@ -4,7 +4,7 @@
 
 IBusBM ibus; //iBus Object
 
-//Channel 1-4 reading (Joy)
+//Channel 1-5 reading (Joy)
 int readChannel(byte channelInput, int minLimit, int maxLimit, int defaultValue) {
   uint16_t ch = ibus.readChannel(channelInput);
   if (ch < 100) return defaultValue;
