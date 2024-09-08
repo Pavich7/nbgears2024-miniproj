@@ -1,2 +1,2 @@
-# nbgears2024-miniproj
+# NB GEARS 2024 Miniproject
 Source code for 2024 KMUTNB GEARS Miniproject using arduino.
