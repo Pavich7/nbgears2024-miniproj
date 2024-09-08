@@ -36,11 +36,10 @@ void loop() {
   Serial.print(CH1value);
 
   //CH6 (Switch)
-  Serial.print("Ch6: ");
-  Serial.print(readSwitch(5, false));
-  Serial.println();
+  int CH6value = readSwitch(5, false);
+  Serial.print(CH6value);
 
-  //Small delay
+  Serial.println();
   delay(10);
 
   //End INPUT Zone...
