@@ -1,3 +1,5 @@
+// PLEASE DELETE THIS FILE AFTER PROJECT IS FINISHED!!!
+
 /*
   RC Remote Car
   fsi6x-RC-car-spin.ino
