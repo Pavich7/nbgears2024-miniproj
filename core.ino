@@ -1,5 +1,26 @@
 #include <IBusBM.h>
 
+// (INCOMPLETED) Define motor driver pin (ex. m1f, m1 = Motor 1, f= Forward, or b = Backward, sp = Speed).
+//m1-m3 are wheels and m4 is lift.
+
+/* UNCOMMENT when FINISED.
+#define m1f 
+#define m1b 
+#define m1sp 5
+
+#define m2f 
+#define m2b 
+#define m2sp 4
+
+#define m3f
+#define m3b
+#define m3sp 33
+
+#define m4f
+#define m4b
+#define m4sp 25
+*/
+
 // iBus 1.1.4 (FS-I6X)
 
 IBusBM ibus; //iBus Object
