@@ -1,0 +1,2 @@
+Please DELETE this folder after project is FINISHED.
+Cause we don't want other party code in here. Only our codes!
