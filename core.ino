@@ -24,17 +24,19 @@ void setup() {
 }
 
 void loop() {
-
-  //INPUT Zone...
-
   //CH1-4 (Joy)
-  int ROTATE = readChannel(0, -100, 100, 0);
-  int LIFT = readChannel(1, -100, 100, 0);
-  int FB = readChannel(2, -100, 100, 0);
-  int LR = readChannel(3, -100, 100, 0);
-  //Small delay
-  delay(10);
-
-  //End INPUT Zone...
+  int rawROTATE = readChannel(0, -100, 100, 0);
+  int rawLIFT = readChannel(1, -100, 100, 0);
+  int rawFB = readChannel(2, -100, 100, 0);
+  int rawLR = readChannel(3, -100, 100, 0);
+  //Mapping
+  if(rawROTATE<0){
+    int ROTATE = 0;
+    ROTATE = map(rawROTATE, 0, -100, 0, 255);
+  }else if(rawROTATE>=0){
+    int ROTATE = 0;
+    ROTATE = map(rawROTATE, 0, 100, 0, 255);
+  }
+  Serial.println();
 
 }
