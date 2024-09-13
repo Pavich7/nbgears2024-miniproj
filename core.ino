@@ -24,19 +24,35 @@ void setup() {
 }
 
 void loop() {
+
   //CH1-4 (Joy)
   int rawROTATE = readChannel(0, -100, 100, 0);
-  int rawLIFT = readChannel(1, -100, 100, 0);
   int rawFB = readChannel(2, -100, 100, 0);
   int rawLR = readChannel(3, -100, 100, 0);
+  
   //Mapping
   if(rawROTATE<0){
-    int ROTATE = 0;
-    ROTATE = map(rawROTATE, 0, -100, 0, 255);
+    int ROTATE_CCW = 0;
+    ROTATE_CCW = map(rawROTATE, 0, -100, 0, 255);
   }else if(rawROTATE>=0){
-    int ROTATE = 0;
-    ROTATE = map(rawROTATE, 0, 100, 0, 255);
+    int ROTATE_CW = 0;
+    ROTATE_CW = map(rawROTATE, 0, 100, 0, 255);
   }
-  Serial.println();
+
+  if(rawFB<0){
+    int FW = 0;
+    FW = map(rawFB, 0, -100, 0, 255);
+  }else if(rawFB>=0){
+    int RW = 0;
+    RW = map(rawFB, 0, 100, 0, 255);
+  }
+
+  if(rawLR<0){
+    int L = 0;
+    L = map(rawLR, 0, -100, 0, 255);
+  }else if(rawLR>=0){
+    int R = 0;
+    R = map(rawLR, 0, 100, 0, 255);
+  }
 
 }
