@@ -39,7 +39,7 @@ void setup() {
   ibus.begin(Serial1); //iBus init on Serial1
 
   //Set motor driver pinmode **Require pin define
-  for(int i=1;i<=9;i++){
+  for(int i=2;i<=10;i++){
     pinMode(i,OUTPUT);
   }
 
