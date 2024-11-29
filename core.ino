@@ -40,7 +40,6 @@ void loop() {
     //CH1-4 (Joy)
     int rawROTATE = readChannel(0, -100, 100, 0);
     int rawFB = readChannel(2, -100, 100, 0);
-    int rawLR = 0; //readChannel(3, -100, 100, 0);
   
     //Mapping
     if(rawROTATE<-20){
